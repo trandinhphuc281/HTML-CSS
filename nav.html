@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font icon/fontawesome-free-5.15.4-web/css/all.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            font-family: RobotoCondensed;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        nav {
+            background-color: #273c75;
+        }
+
+        #main-menu {
+            display: flex;
+        }
+
+        nav #main-menu li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px 15px;
+        }
+
+        nav #main-menu li:hover a {
+            background: #c23616;
+            transition: all 0.5s;
+        }
+
+        #toggle {
+            display: none;
+            background: #353b48;
+            color: #fff;
+            text-align: right;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            #main-menu {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#toggle').click(function () {
+                $('nav').slideToggle();
+            });
+        });
+    </script>
+    <div id="wrapper">
+        <div id="header">
+            <div id="toggle">
+                <i class="fas fa-align-justify"></i>
+            </div>
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="">Trang Chủ</a></li>
+                    <li><a href="">giới thiệu</a></li>
+                    <li><a href="">Tin tức</a></li>
+                    <li><a href="">Sản phẩm</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font icon/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="css/Lienhe.css">
+    <script src="jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('#toggle').click(function () {
+                $('ul').slideToggle();
+            });
+        });
+    </script>
+    <div class="container">
+        <div class="header">
+            <div class="header-top">
+                <img src="img\Rectangle 2.png" alt="">
+                <div id="toggle">
+                    <i class="fas fa-align-justify"></i>
+                </div>
+                <div class="log">
+                    <button class="search-bt">Tìm kiếm</button>
+                    <input class="in-tk" type="text" placeholder="      Tìm tên sản phẩm" required>
+                    <button class="log-in">Đăng nhập</button>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Danh mục</a></li>
+                        <li><a href="Sanpham.html">Thương hiệu độc quyền</a></li>
+                        <li><a href="Tintuc.html">Tin tức</a></li>
+                        <li><a href="Gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="Lienhe.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="word">
+            <a href="index.html" class="word-tc">Trang chủ / </a>
+            <a href="Lienhe.html" class="word-font">Liên hệ</a>
+        </div>
+        <div class="main">
+            <div class="row">
+                <div class="colum">
+                    <h3>Liên hệ</h3>
+                    <p>Nếu bạn có gì thắc mắc hãy liên hệ với chúng tôi qua địa chỉ.</p>
+                    <table>
+                        <tr>
+                            <td class="tb-tr">ĐIỆN THOẠI</td>
+                            <td> 0976890027</td>
+                        </tr>
+                        <tr>
+                            <td class="tb-tr">ĐỊA CHỈ</td>
+                            <td> Tân Minh - Sóc Sơn - Hà Nội</td>
+                        </tr>
+                        <tr>
+                            <td class="tb-tr">EMAIL</td>
+                            <td> trandinhphuc6789@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td class="tb-tr">THỜI GIAN LÀM VIỆC</td>
+                            <td> Tất cả các ngày trong tuần</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="column">
+                    <h3>Gửi thắc mắc cho chúng tôi</h3>
+                    <p>Nếu bạn có thắc mắc gì, có thể gửi yêu cầu
+                        cho chúng tôi và
+                        chúng tôi sẽ liên lạc với bạn sớm nhất có thể.</p>
+                    <input type="text" placeholder="  Tên của bạn" class="col-in">
+                    <input type="text" placeholder="  Email của bạn" class="col-in">
+                    <input type="text" placeholder="  Số điện thoại của bạn" class="col-inp">
+                    <input type="text" placeholder="  Nội dung" class="col-inpt">
+                    <p>This site is protected by reCAPTCHA and the Google
+                        Privacy Policy and Terms of Service apply.</p>
+                    <button class="col-bt">Gửi cho chúng tôi</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright © 2021 Powered by Haravan</p>
+            <div class="font-icon">
+                <a href="https://m.facebook.com" class="font-icon-ft">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.google.com.vn" class="font-icon-ft">
+                    <i class="fab fa-google fa-2x"></i>
+                </a>
+                <a href="https://www.twitter.com" class="font-icon-ft">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://web.telegram.org" class="font-icon-ft">
+                    <i class="fab fa-telegram-plane fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
